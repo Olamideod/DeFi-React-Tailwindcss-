@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;400;500;700&display=swap');
+
+
+@layer base{
+  *{
+    @apply font-[Kanit]
+  }
+  h1{
+    @apply p-2 text-3xl font-bold
+  }
+  button{
+    @apply bg-gradient-to-r from-[var(--secondary-color)] to-[var(--primary-color)] px-7 py-2 mx-2 rounded-3xl
+  }
+}
+
+:root{
+  --primary-color: #0058ff;
+  --secondary-color: #6a00ff;
+}
